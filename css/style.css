@@ -22,6 +22,11 @@ li{
     color: #b5aaa1;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Hover rules */
 
 /* Button rules */
@@ -93,8 +98,6 @@ h1{
 }
 .jumbotron-left{
     flex-basis: 30%;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 .jumbotron-left i{
@@ -145,54 +148,69 @@ h1{
 }
 .col{
     margin:50px 0;
-    border: 1px #b5aaa1 solid;
     flex-basis: calc(100%/3);
+}
+.table-border-gray{
+    border: 1px #b5aaa1 solid;
 }
 
 /* Table business rules */
 
-.col-title{
-    border-bottom: 1px #b5aaa1 solid;
-    padding: 10px;
-    text-align: center;
-}
-.table-cont{
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-.table-cont h3{
-    font-size: 1.5em;
-    margin-bottom: 25px;
-}
-.table-cont .price{
-    margin-bottom: 10px;
-}
-.table-cont .frequency{
-    margin-bottom: 40px;
-}
-.cont-mini-table{
-    margin: 30px -5px;
-}
-.mini-table{
-    margin-bottom: 15px;
-}
-.table-cont > p{
-    margin: 30px 0;
-}
-.table-cont hr{
-    width: 25%;
-    border:none;
-    border-bottom: 2px #b5aaa1 solid;
-}
-.cont-mini-table h5{
-    margin-bottom: 20px;
-    font-size: 1em;
-}
-.mini-table{
-    display: flex;
-}
+    .col-title{
+        border-bottom: 1px #b5aaa1 solid;
+        padding: 10px;
+        text-align: center;
+    }
+    .table-cont{
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .table-border-gray h3{
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    .table-cont .price{
+        margin-bottom: 10px;
+    }
+    .table-cont .frequency{
+        margin-bottom: 40px;
+    }
+    .cont-mini-table{
+        margin: 30px -5px;
+    }
+    .mini-table{
+        margin-bottom: 15px;
+    }
+    .table-cont > p{
+        margin: 30px 0;
+    }
+    .table-cont hr{
+        width: 25%;
+        border:none;
+        border-bottom: 2px #b5aaa1 solid;
+    }
+    .table-border-gray h5{
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+    .mini-table{
+        display: flex;
+    }
 
+    /* Table orizontal rules */
+
+    .orizontal-business{
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .orizontal-business div:first-child{
+        flex-basis: 70%;
+    }
+    .orizontal-business div:last-child{
+        flex-basis: 30%;
+    }
 
 /* Partner section rules */
 
