@@ -6,15 +6,126 @@
 }
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+}
+li{
+    list-style: none;
 }
 
-
+.block{
+    display: block;
+}
 
 /* Hover rules */
 
+/* Button rules */
+
+.btn-blue{
+background-color:#0061ff ;
+color: #fff;
+width: fit-content;
+}
+.btn-small-padd{
+    padding: 5px 10px;
+}
+
 /* Header rules */
 
+header{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header-left, .header-right{
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 15px;
+}
+header li{
+    padding: 0 10px;
+}
+
 /* jumbotron rules */
+
+.jumbotron-container{
+    background-color: #b4d0e7;
+    height: 650px;
+}
+.jumbotron{
+    padding-top: 150px;
+    width: 60vw;
+    margin: 0 auto;
+}
+h1{
+    font-size: 5em;
+    margin-bottom: 40px;
+}
+.jumbotron-col{
+    display: flex;
+    justify-content: space-between;
+}
+.jumbotron-left{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.jumbotron-left i{
+    margin-top: 40px;
+}
+.jumbotron div:nth-child(2){
+    flex-basis: 70%;
+}
+.jumbotron img{
+    width: 100%;
+}
+
+.jumbotron i{
+    font-size: 3em;
+}
+
+
+/* main rules */
+.main-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Business plan rules */
+
+/* Partner section rules */
+
+/* Dropbox business operations rules */
+
+/* Title and paragraph Dropbox rules */
+
+/* Slideshow rules */
+
+/* Faqs rules */
+
+/* Footer rules */
+
+
+
+
+
+/* DEBUG rules */
 
 
