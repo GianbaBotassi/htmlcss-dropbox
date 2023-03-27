@@ -13,8 +13,13 @@ li{
     list-style: none;
 }
 
+
 .block{
     display: block;
+}
+
+.grey-color{
+    color: #b5aaa1;
 }
 
 /* Hover rules */
@@ -25,9 +30,14 @@ li{
 background-color:#0061ff ;
 color: #fff;
 width: fit-content;
+text-align: center;
 }
 .btn-small-padd{
     padding: 5px 10px;
+}
+.btn-big{
+    width: 100%;
+    padding: 10px 0;
 }
 
 /* Header rules */
@@ -70,7 +80,7 @@ header li{
 }
 .jumbotron{
     padding-top: 150px;
-    width: 60vw;
+    width: 65vw;
     margin: 0 auto;
 }
 h1{
@@ -102,13 +112,87 @@ h1{
 }
 
 
+
+
 /* main rules */
+
+
+
 .main-container{
-    width: 50%;
-    margin: 0 auto;
+    width: 55%;
+    margin: 150px auto;
 }
 
 /* Business plan rules */
+
+
+
+.plan-container h2{
+    font-size: 2.7em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.plan-container i{
+    margin-right: 5px;
+}
+.billing{
+    margin-right: 50px;
+}
+.table-business-plan{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.col{
+    margin:50px 0;
+    border: 1px #b5aaa1 solid;
+    flex-basis: calc(100%/3);
+}
+
+/* Table business rules */
+
+.col-title{
+    border-bottom: 1px #b5aaa1 solid;
+    padding: 10px;
+    text-align: center;
+}
+.table-cont{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.table-cont h3{
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+.table-cont .price{
+    margin-bottom: 10px;
+}
+.table-cont .frequency{
+    margin-bottom: 40px;
+}
+.cont-mini-table{
+    margin: 30px -5px;
+}
+.mini-table{
+    margin-bottom: 15px;
+}
+.table-cont > p{
+    margin: 30px 0;
+}
+.table-cont hr{
+    width: 25%;
+    border:none;
+    border-bottom: 2px #b5aaa1 solid;
+}
+.cont-mini-table h5{
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+.mini-table{
+    display: flex;
+}
+
 
 /* Partner section rules */
 
