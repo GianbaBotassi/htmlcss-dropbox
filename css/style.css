@@ -28,12 +28,17 @@
     .grey-color{
         color: #b5aaa1;
     }
-    h3{
-        font-size: 1.5em;
+    h1{
+        font-size: 5em;
+        margin-bottom: 40px;
+        font-weight: 900;
     }
     h2{
         font-size: 2.7em;
         font-weight: 700;
+    }
+    h3{
+        font-size: 1.5em;
     }
     h4{
         font-size: 1.2em;
@@ -62,10 +67,6 @@
 
 /* Hover rules */
 
-.faqs div:hover .faqs-hover{
-    display: block;
-}
-
 
 .btn-blue:hover{
     background-color: #0093ce;
@@ -73,9 +74,9 @@
 .btn-white:hover{
     background-color: #b5aaa1;
 }
-
-
-
+.faqs div:hover .faqs-hover{
+    display: block;
+}
 
 /* Button rules */
 
@@ -85,14 +86,12 @@ color: #fff;
 width: fit-content;
 text-align: center;
 }
-
 .btn-white{
     border: 1px solid #000;
     width: fit-content;
     text-align: center;
     background-color: #fff;
 }
-
 .btn-small-padd{
     padding: 10px 20px;
 }
@@ -100,7 +99,6 @@ text-align: center;
     width: 100%;
     padding: 10px 0;
 }
-
 
 /* Header rules */
 
@@ -113,7 +111,6 @@ header{
     width: 100%;
     background-color: #fff;
 }
-
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -129,7 +126,6 @@ header{
 header ul{
     display: flex;
 }
-
 header a{
     padding: 15px;
     text-decoration: none;
@@ -144,11 +140,6 @@ header a{
 }
 .jumbotron{
     padding-top: 150px;
-}
-h1{
-    font-size: 5em;
-    margin-bottom: 40px;
-    font-weight: 900;
 }
 .jumbotron-col{
     display: flex;
@@ -171,8 +162,6 @@ h1{
     width: 100%;
     position: absolute;
 }
-
-
 .jumbotron i{
     font-size: 3em;
 }
@@ -411,8 +400,6 @@ h1{
     .central-col-slideshow p:last-child{
         margin-top: 40px;
     }
-
-    
 
     /* Lightblue band under slideshow */
 
