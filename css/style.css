@@ -16,6 +16,9 @@
     a{
         text-decoration: none;
     }
+    a:visited{
+        color: unset;
+    }
 
 
     .block{
@@ -48,28 +51,28 @@
         position: relative;
     }
     .centered-foot-jumb{
-        width: 65vw;
+        max-width: 1000px;
         margin: 0 auto;
     }
     .centered-main{
-        width: 55vw;
+        max-width: 900px;
         margin: 0 auto;
     }
 
 
 /* Hover rules */
 
-.faqs div:hover .faqs p{
+.faqs div:hover .faqs-hover{
     display: block;
-    background-color: red;
 }
 
 
-
-
-
-
-
+.btn-blue:hover{
+    background-color: #0093ce;
+}
+.btn-white:hover{
+    background-color: #b5aaa1;
+}
 
 
 
@@ -137,7 +140,7 @@ header a{
 
 .jumbotron-container{
     background-color: #b4d0e7;
-    height: 700px;
+    padding-bottom: -100px;
 }
 .jumbotron{
     padding-top: 150px;
@@ -156,14 +159,19 @@ h1{
     gap: 30px;
 }
 .jumbotron-left i{
-    margin-top: 40px;
+    margin: 40px 0 20px 0;
 }
 .jumbotron-col div:nth-child(2){
     flex-basis: 70%;
 }
+.jumbo-img-wrapper{
+    position: relative;
+}
 .jumbotron img{
     width: 100%;
+    position: absolute;
 }
+
 
 .jumbotron i{
     font-size: 3em;
@@ -215,9 +223,8 @@ h1{
         text-align: center;
     }
     .table-cont{
-        width: 80%;
         margin: 0 auto;
-        padding: 25px 0;
+        padding: 25px 10%;
     }
     .table-border-gray h3{
         margin-bottom: 25px;
@@ -231,7 +238,7 @@ h1{
     .cont-mini-table{
         margin: 30px -5px;
     }
-  .cont-mini-table.top{
+    .cont-mini-table.top{
         height: 150px;
     }
     .mini-table{
@@ -325,6 +332,9 @@ h1{
         margin-bottom: 60px;
         width: 60%;
     }
+    .customers-container a{
+        text-decoration: underline;
+    }
 
 /* Slideshow rules */
     .slideshow{
@@ -350,13 +360,10 @@ h1{
         top: 50%;
         transform: translate(-50%,-50%);
         width: 120px;
-    }
-    .left-col-slideshow svg, .right-col-slideshow img{
-
+        filter: invert(1);
     }
     .slideshow  #designit{
         background-color: #a2d39b;
-        border: 15px solid #a2d39b;
     }
     .slideshow  #uf{
         background-color: #0093ce;
@@ -379,12 +386,17 @@ h1{
     .slideshow  #clear-channel-outdoor{
         background-color: #ffd830;
     }
+    .moving-border{
+        border: 20px solid rgba(255, 255, 255, 0.3);
+    }
 
     /* Central column slideshow */
 
     .central-col-slideshow{
         flex-basis: calc(100% - 550px);
         padding: 50px;
+        overflow-y: auto;
+        font-size: 1.3em;
     }
     .central-col-slideshow hr{
         margin: 50px 0;
@@ -417,6 +429,7 @@ h1{
 }
 .lightblue-cont div:first-child{
     flex-basis: 60%;
+    color: #61082b;
 }
 .lightblue-cont div:last-child{
     flex-basis: 30%;
@@ -432,23 +445,30 @@ h1{
     border-bottom: 1px solid #b5aaa1;
     padding-bottom: 60px;
 }
-.faqs div{
+.faqs-flex{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #b5aaa1;
     align-items: center;
 }
 .faqs i{
     margin-right: 40px;
 }
-.faqs div{
+
+.faqs-line{  
+    border-bottom: 1px solid #b5aaa1;
     padding: 40px 0;
 }
 .faqs p{
     display: none;
+    padding-top: 40px;
 }
 
+
+
+
+
 /* Footer rules */
+
 footer{
     background-color: #000;
     color: #fff;
@@ -471,11 +491,10 @@ footer li{
     font-size: 1.4em;
     font-weight: bold;
     padding-bottom: 15px;
-    border-bottom: 1px #b5aaa1 solid;
 }
 footer .lang{
     border-top: 2px solid #b5aaa1 ;
-    width: fit-content;
+    width: 10%;
     padding: 50px 0 30px 0;
 }
 
