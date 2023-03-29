@@ -17,7 +17,7 @@
         <div class="navbar">
             <div class="header-left">
                 <div>
-                    <a href="#"><img src="img/logo-small.png" alt="Logo"></a>
+                    <a href="#"><img id="logo" src="img/logo-small.png" alt="Logo"></a>
                 </div>
                 <ul>
                     <div class="dropdown">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <li><a href="#">Piani e Prezzi</a></li>
+                        <li><a href="#ciao">Piani e Prezzi</a></li>
                         <div class="dropdown-content">
                             <a href="#">Tanto</a>
                             <a href="#">Tantissimo</a>
@@ -97,8 +97,6 @@
                 </div>
             </div>
         </div>
-    
-
     </section>
     
     <!-- Main -->
@@ -111,9 +109,14 @@
                 <h2>Trova il piano business che fa per te</h2>
 
                 <!-- Billing type -->
-                <span class="billing"><i class="fa-solid fa-circle-dot"></i>Fatturazione mensile</span>
-                <span class="billing"><i class="fa-regular fa-circle"></i>Fatturazione annuale</span>
-
+                <div class="flex-row">
+                    <div class="billing">
+                        <i class="fa-solid fa-circle-dot"></i><span class="billing">Fatturazione mensile</span>
+                    </div>
+                    <div class="billing">
+                    <i class="fa-regular fa-circle"></i><span class="billing">Fatturazione annuale</span>
+                    </div>  
+                </div>
                 <!-- Table business plan -->
 
 
@@ -432,7 +435,7 @@
             <!-- LIghtblue band under slideshow -->
             
             <div class="lightblue-band">
-                <div class="lightblue-cont">
+                <div class="lightblue-cont centered-main flex-row">
                     <div>
                         <h2>Porta Dropbox Business nella tua azienda.</h2>
                     </div>
@@ -443,7 +446,7 @@
 
 
             <!-- Faqs -->
-            <section class="faqs">
+            <section class="faqs centered-main">
                 <h2>Domande frequenti</h2>
                 <div class="faqs-line">
                     <div class="faqs-flex">

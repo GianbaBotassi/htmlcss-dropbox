@@ -43,10 +43,17 @@
     h4{
         font-size: 1.2em;
     }
+    h5{
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
 
 /* Utility class */
 
-
+    .flex-row{
+        display: flex;
+        align-items: center;
+    }
     .flex-column{
         display: flex;
         flex-direction: column;
@@ -69,7 +76,8 @@
 
 
 .btn-blue:hover{
-    background-color: #0093ce;
+    background-color: #cb70d1;
+    border-radius: 20px;
 }
 .btn-white:hover{
     background-color: #b5aaa1;
@@ -113,6 +121,7 @@ background-color:#0061ff ;
 color: #fff;
 width: fit-content;
 text-align: center;
+transition: all 1s ease-out;
 }
 .btn-white{
     border: 1px solid #000;
@@ -162,10 +171,10 @@ header a{
 
 .jumbotron-container{
     background-color: #b4d0e7;
-    padding-bottom: -100px;
+    margin-bottom:80px;
 }
 .jumbotron{
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .jumbotron-col{
     display: flex;
@@ -185,7 +194,7 @@ header a{
     position: relative;
 }
 .jumbotron img{
-    width: 100%;
+    max-width: 100%;
     position: absolute;
 }
 .jumbotron i{
@@ -195,9 +204,8 @@ header a{
 
 /* Business plan rules */
 
-
 .plan-container{
-    margin-top: 150px;
+    padding-top: 70px;
 }
 .plan-container h2{
     margin-bottom: 40px;
@@ -206,15 +214,13 @@ header a{
     margin-right: 5px;
 }
 .billing{
-    margin-right: 50px;
-    vertical-align: middle;
-    line-height: 20px;
+display: flex;
+align-items: center;
+margin-right: 30px;
 }
 .billing i{
     color: #0061ff;
     font-size: 1.2em;
-    vertical-align: middle;
-    line-height: 20px;
 }
 .table-business-plan{
     display: flex;
@@ -257,6 +263,7 @@ header a{
         height: 150px;
     }
     .mini-table{
+        display: flex;
         margin-bottom: 15px;
     }
     .table-cont > p{
@@ -266,13 +273,6 @@ header a{
         width: 25%;
         border:none;
         border-bottom: 2px #b5aaa1 solid;
-    }
-    .table-border-gray h5{
-        margin-bottom: 20px;
-        font-size: 1em;
-    }
-    .mini-table{
-        display: flex;
     }
     .col p a{
         text-decoration: underline;
@@ -307,7 +307,7 @@ header a{
         flex-basis: 60%;
     }
     .partner-container div img{
-        width: 100%;
+        max-width: 100%;
     }
     .partner-container div:last-child{
         flex-basis: 35%;
@@ -319,7 +319,6 @@ header a{
     .partner-container p{
         margin-bottom:40px;
     }
-
 
 /* Dropbox business operations rules */
 
@@ -335,7 +334,7 @@ header a{
 
     }
     .customer-flex-wrap .flex-column img{
-        width: 100%;
+        max-width: 100%;
     }
     .customer-flex-wrap .flex-column p{
         margin-top: 25px;
@@ -354,7 +353,7 @@ header a{
 /* Slideshow rules */
     .slideshow{
         display: flex;
-        margin: 60px 0 0 0;
+        margin-top: 60px;
     }
     .left-col-slideshow, .right-col-slideshow{
         display: flex;
@@ -431,10 +430,7 @@ header a{
     height: 300px;
 }
 .lightblue-cont{
-    width: 55%;
-    margin:0 auto;
     padding: 100px 0;
-    display: flex;
     gap: 10%;
 }
 .lightblue-cont div:first-child{
@@ -447,9 +443,9 @@ header a{
 
 /* Faqs rules */
 
+
 .faqs{
-    width: 55%;
-    margin: 100px auto;
+    padding: 100px 0;
 }
 .faqs h2{
     border-bottom: 1px solid #b5aaa1;
@@ -473,10 +469,6 @@ header a{
     padding-top: 40px;
 }
 
-
-
-
-
 /* Footer rules */
 
 footer{
@@ -484,9 +476,7 @@ footer{
     color: #fff;
 }
 .foot-row{
-    width: 65vw;
     padding: 80px 0 100px 0;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -511,8 +501,3 @@ footer .lang{
 
 
 /* DEBUG rules */
-
-
-
-
-
