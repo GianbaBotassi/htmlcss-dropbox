@@ -85,6 +85,15 @@
 .faqs div:hover .faqs-hover{
     display: block;
 }
+.faqs div:hover .faqs-hover,.faqs div:hover .fa-chevron-up{
+    display: block;
+}
+.faqs div:hover .fa-chevron-down{
+    display: none;
+}
+.fa-solid.fa-chevron-up{
+    display: none;
+}
 ul a:hover{
     background-color: #b5aaa1;
 }
